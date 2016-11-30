@@ -15,3 +15,9 @@
 <% end %>		
 
 <p>My favorite picture is <%= image_tag @pic, class: "images" %> </p>
+
+<%= link_to "Blue", about_path(color: "blue"), class: "btn btn-primary"  %>
+
+<%= link_to "Red", about_path(color: "red"), class: "btn btn-danger"  %>
+
+<%= link_to "Green", about_path(color: "green"), class: "btn btn-success"  %>

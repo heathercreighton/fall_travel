@@ -14,4 +14,11 @@ class WelcomeController < ApplicationController
    @pic = params[:pic]
 	end
 
+
+
+	def contact
+	end	
+
+
+	
 end
