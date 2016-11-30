@@ -1,0 +1,19 @@
+<h1>Welcome To Creighton Travel</h1>
+<p>Adventure, Fun, and Awesomeness Await!</p>
+
+<h1><%= @homestate %></h1>
+
+<ul>
+<% @countries.each do |country| %>
+	<li><%= country %></li>
+<% end %>	
+</ul>
+
+
+
+
+<ul>
+	<% @images.each do |image| %>
+		<li><%= image_tag image, class: "images" %></li>
+	<% end %>
+</ul>		

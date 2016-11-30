@@ -1,0 +1,17 @@
+<style> body {background: <%= @color %>;
+}
+</style>
+
+<h1>About me</h1>
+<p>Lots of interesting stuffs.</p>
+
+
+<p>
+	My favorite color is <%= @color %> and my shoe size is <%= @size %>, which is pretty big!
+</p>
+
+<% if @size.to_i >12 %>
+		<p>I have HUGE feet</p>
+<% end %>		
+
+<p>My favorite picture is <%= image_tag @pic, class: "images" %> </p>
